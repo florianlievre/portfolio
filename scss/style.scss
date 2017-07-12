@@ -1,0 +1,80 @@
+/* Style principal */
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+
+header {
+  nav {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background-color: transparent;
+    transition: background .7s;
+
+    #navbar {
+      float:right;
+      margin-right: 50px;
+      padding-left: 0;
+      padding-right: 0;
+      display: block !important;
+      height: auto !important;
+      padding-bottom: 0;
+      overflow: visible !important;
+
+      ul {
+        margin-top:15px;
+
+        li {
+          float: left;
+          position: relative;
+          display: block;
+
+          a {
+            color:white;
+            text-transform: uppercase;
+            font-size: 0.8em;
+            font-weight: 400;
+            letter-spacing: 2px;
+            transition: color .5s;
+            position: relative;
+            display: block;
+            padding: 10px 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+#home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('../img/wallpaper.png');
+  background-size: cover;
+  background-position: 50%;
+  background-attachment: fixed;
+
+  .title {
+    text-align: center;
+    padding: 10% 0;
+    color: #ececec;
+    text-transform: uppercase
+  }
+
+  a.scroll {
+    position: absolute;
+    bottom: 10px;
+    left: 48%;
+
+    img {
+      width:60px;
+    }
+  }
+}
